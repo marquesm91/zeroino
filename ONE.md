@@ -88,7 +88,7 @@ A segunda soma já temos o fenômeno do "vai um" na matemática, logo `1 + 1 = 1
 A terceira e a quarta soma são idênticas a primeira, logo temos que o número final é `1 1 0 1`. Fica como desafio, converter os três números para a base decimal e verificar se a soma está correta. Após a apresentação da operação de soma na base binária não é difícil perceber que é bem direta e simples, mas existe um pequeno problema que muitos projetistas acabam pecando. Vamos analisar a soma de dois números novamente, agora o primeiro sendo `0 1 1 1`. A primeira e a segunda soma continuarão sendo idênticas, porém a terceira e a quarta deixaram de ser `1 + 0` e passaram a ser `1 + 1`. Se continuarmos as operações chegamos ao seguinte resultado.
 
 <div class="code-scope">
-		1 <span class="red-content">1</span> &nbsp;&nbsp;<span class="red-content">1</span><br/>
+		1 <span class="red-content">1</span> <span class="red-content">1</span><br/>
 		&nbsp;&nbsp;0 <span class="red-content">1</span>	<span class="red-content">1</span> <span class="blue-content">1</span><br/>
 		+&nbsp;<span class="red-content">1</span> 0 <span class="red-content">1</span> <span class="blue-content">0</span><br/>
 		&nbsp;&nbsp;=======<br/>
