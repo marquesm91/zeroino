@@ -13,3 +13,4 @@
 		* [Operador <](ONE.md#adicao)
 		* [Operador >](ONE.md#adicao)
 	* [Dicionário do capítulo](ONE.md#dicionario)
+	
