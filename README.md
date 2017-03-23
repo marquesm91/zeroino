@@ -1,4 +1,4 @@
-#O que é ZeroIno?
+# O que é ZeroIno?
 
 ZeroIno é um livro voltado para iniciantes e futuros entusiastas do mundo da programação. Ele foi escrito da maneira mais clara e organizada possível para evitar qualquer dúvida durante o aprendizado.
 
