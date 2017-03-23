@@ -1,3 +1,7 @@
+p {
+	text-align: justify;
+}
+
 .markdown-section .code-scope {
 	font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
 	font-size: .85em;
@@ -9,10 +13,14 @@
     background: #f7f7f7;
 }
 
-.high-number {
+.red-content {
 	color: #BD050A;
 }
 
-p {
-	text-align: justify;
+.blue-content {
+	color: #1238C5;
+}
+
+.yellow-content {
+	color: #ACAB00;
 }

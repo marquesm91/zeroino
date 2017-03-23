@@ -52,12 +52,50 @@ Intuitivamente conseguimos ver que 0 representa um *bit* "desligado" e 1 "ligado
 
 Um total de 10 *bits* para sua representação. Não existe uma fórmula tão direta e simples para calcular o número exato de *bits*, mas sabemos da matemática que `2^10 = 1024` logo, qualquer número na faixa de 0 a 1023 é possível representar rearranjando os 10 *bits* disponíveis.
 
-<h3 id="operacoes">Operações com os *bits*</h3>
+<h3 id="operacoes">Operações com os bits</h3>
 
-Todos sabemos que existem quatro operações básicas na matemática: soma `+`, subtração `-`, multiplicação `*` e divisão `/`. Dentre elas, a operação de soma é a mais comum no sistema binário. Além dela, os deslocamentos à direita e esquerda, operações lógicas de bit a bit como AND, OR, XOR e NOT são bem comuns.
+Todos sabemos que existem quatro operações básicas na matemática: soma `+`, subtração `-`, multiplicação `*` e divisão `/`. Dentre elas, a operação de soma e as operações lógicas como AND, OR, XOR e NOT são classificadas como operações bitwise ou bit a bit. Além delas, os deslocamentos à direita e esquerda são fortemente utilizados e classificados como operações de deslocamentos. Esses, que caracterizam a multiplicação e a divisão no mundo da computação.
 
-<h4 id="bitabit">Bit a bit</h4>
+<h4 id="adicao">Operador +</h4>
 
+Soma dois números na base 10 é bem simples e muitas das vezes não é preciso colocar no papel. Já no sistema binário, por envolver mais algarismos (bits é melhor aqui), não é tão fácil sem um pouco de prática. Vamos analisar o exemplo a seguir e fazer uma pequena modificação dele para notar um fenômeno não muito comum de acontecer, mas por um descuido pode ser péssimo para o seu projeto.
+
+<div class="code-scope">
+		&nbsp;&nbsp;0 0	<span class="red-content">1</span> <span class="blue-content">1</span><br/>
+		+&nbsp;1 0 <span class="red-content">1</span> <span class="blue-content">0</span><br/>
+		&nbsp;&nbsp;=======<br/>
+</div>
+
+Foi marcado em <span class="blue-content">azul</span> e <span class="red-content">vermelho</span> duas situações de acontecer. Somar `1` com `0` e `1` com `1`. Só para completar, o sistema binário não é mágico, então somar `0` com `0` continua sendo `0`. A operação em <span class="blue-content">azul</span> é simples e direta: `1 + 0 = 1`.
+
+<div class="code-scope">
+		&nbsp;&nbsp;0 0	<span class="red-content">1</span> <span class="blue-content">1</span><br/>
+		+&nbsp;1 0 <span class="red-content">1</span> <span class="blue-content">0</span><br/>
+		&nbsp;&nbsp;=======<br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
+</div>
+
+A segunda soma já temos o fenômeno do "vai um" na matemática, logo `1 + 1 = 10`. Um pouco estranho, mas não podemos esquecer que estamos na base binária agora. Traduzindo `10` para a base decimal e lembrando que o bit 1 - ou segundo bit - equivale a `2^1 = 2` temos que o número `10` na base binária é o número 2 na base decimal. Daí temos que,
+
+<div class="code-scope">
+		&nbsp;&nbsp;&nbsp;&nbsp;1<br/>
+		&nbsp;&nbsp;0 0	<span class="red-content">1</span> <span class="blue-content">1</span><br/>
+		+&nbsp;1 0 <span class="red-content">1</span> <span class="blue-content">0</span><br/>
+		&nbsp;&nbsp;=======<br/>
+		&nbsp;&nbsp;1 1 0 1
+</div>
+
+A terceira e a quarta soma são idênticas a primeira, logo temos que o número final é `1 1 0 1`. Fica como desafio, converter os três números para a base decimal e verificar se a soma está correta. Após a apresentação da operação de soma na base binária não é difícil perceber que é bem direta e simples, mas existe um pequeno problema que muitos projetistas acabam pecando. Vamos analisar a soma de dois números novamente, agora o primeiro sendo `0 1 1 1`. A primeira e a segunda soma continuarão sendo idênticas, porém a terceira e a quarta deixaram de ser `1 + 0` e passaram a ser `1 + 1`. Se continuarmos as operações chegamos ao seguinte resultado.
+
+<div class="code-scope">
+		1 <span class="red-content">1</span> &nbsp;&nbsp;<span class="red-content">1</span><br/>
+		&nbsp;&nbsp;0 <span class="red-content">1</span>	<span class="red-content">1</span> <span class="blue-content">1</span><br/>
+		+&nbsp;<span class="red-content">1</span> 0 <span class="red-content">1</span> <span class="blue-content">0</span><br/>
+		&nbsp;&nbsp;=======<br/>
+		&nbsp;&nbsp;0 0 0 1
+</div>
+
+Aquele último `1` a esquerda foi perdido, pois não existe bits disponíveis para representá-lo. Esse fenômeno de perda chama-se *overflow*.
 
 <h4 id="deslocamento">Deslocamento</h4>
 
@@ -66,8 +104,3 @@ Todos sabemos que existem quatro operações básicas na matemática: soma `+`, 
 
 * `Bit`: o algarismo no sistema binário.
 * `Byte`: o equivalente a 8 bits.
-* `^`: símbolo matemático que representa a potenciação.
-* `*`: símbolo matemático que representa a multiplicação.
-* `/`: símbolo matemático que representa a divisão.
-* `+`: símbolo matemático que representa a soma.
-* `-`: símbolo matemático que representa a subtração.
