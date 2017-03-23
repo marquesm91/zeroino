@@ -1,0 +1,14 @@
+.markdown-section .code-scope {
+	font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	font-size: .85em;
+    overflow: auto;
+    word-wrap: normal;
+    margin: 0;
+    padding: .85em 1em;
+    margin-bottom: 1.275em;
+    background: #f7f7f7;
+}
+
+.high-number {
+	color: #BD050A;
+}
