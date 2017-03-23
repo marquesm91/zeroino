@@ -1,0 +1,15 @@
+# Capítulo 1 - Sistema Binário
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc purus, pretium sit amet odio ac, blandit interdum neque. Mauris nec lacinia neque, nec blandit ligula. Aliquam sed vehicula tellus, vel vehicula ante. Vivamus ornare dapibus lorem, quis consectetur enim pulvinar eget. Vivamus tincidunt eu dolor a pretium. Etiam iaculis, eros quis scelerisque vulputate, neque lorem suscipit metus, ac finibus mi mauris eget augue. In tempor fringilla est vitae ultrices. Fusce accumsan vel quam sit amet finibus. Fusce varius viverra faucibus. Nullam nec risus sodales, molestie velit vitae, efficitur lacus.
+
+Cras blandit massa ut lorem lobortis, vitae congue mi viverra. Duis id facilisis justo. Vestibulum non augue ac sem euismod fringilla. Nunc eu leo eros. Praesent porttitor dapibus turpis vitae luctus. Aenean tincidunt volutpat nulla, non eleifend turpis dictum non. Quisque laoreet erat ligula, vel pharetra nibh aliquet et. Mauris at maximus erat. Pellentesque quis pellentesque erat.
+
+[include](codes/ex1-1.cpp)
+
+<div style="text-align:center"><img src="http://i.imgur.com/iMGU1xx.png"  width="400" alt="Binary cloud"></div>
+
+Quisque condimentum imperdiet facilisis. Donec vel semper justo. Morbi ornare, dui sed consectetur pulvinar, ante sem volutpat neque, ut euismod nunc velit et tellus. Pellentesque sed aliquet ante, sed convallis mauris. Ut iaculis vehicula lacus, et vehicula odio. Nullam eros tellus, venenatis quis tincidunt a, finibus sit amet felis. Suspendisse fringilla mi felis, in dictum ante consectetur in. Proin suscipit elit a nibh ultrices, feugiat hendrerit sem condimentum. Sed justo libero, luctus a hendrerit eget, finibus at sem.
+
+Pellentesque pulvinar dapibus condimentum. Suspendisse ac elit non purus varius laoreet ac ac odio. Vestibulum nisl nisi, finibus vel metus placerat, volutpat congue justo. Proin sed vulputate ligula. Integer posuere urna eu enim vehicula, vel condimentum dui fringilla. Aenean ac enim lectus. Duis semper ullamcorper urna. Sed vel fermentum nibh. Cras congue id arcu eget laoreet. Pellentesque efficitur nisi eget nisl ornare, vel fermentum dolor pretium. Fusce mattis, eros non vehicula pellentesque, ligula turpis euismod arcu, sit amet bibendum odio magna ac est. Duis nec arcu vehicula est tincidunt aliquet non id nisi. Pellentesque quis dui et libero tincidunt sodales in at ipsum.
+
+Nulla iaculis augue sed quam ornare tristique. Praesent tempor nulla sit amet sapien consequat lobortis. Sed id nisl non nulla venenatis dictum at a dolor. Suspendisse semper justo sapien, nec euismod tortor consectetur a. Mauris in dui ac orci porttitor sollicitudin. Donec efficitur tempor turpis, faucibus porta leo fringilla in. Cras vel venenatis elit. Morbi porta consectetur sagittis. Morbi semper, metus ut aliquam interdum, sem elit finibus nunc, vitae lacinia orci lacus vitae urna. Proin faucibus risus sit amet dolor dictum, a aliquam diam bibendum.

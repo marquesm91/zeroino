@@ -1,0 +1,15 @@
+{
+    "gitbook": "3.x.x",
+    "plugins": [
+        "include-codeblock",
+        "ace",
+				"gist"
+  	],
+    "pluginsConfig": {
+        "include-codeblock": {
+            "template": "ace",
+            "theme": "tomorrow_night_eighties",
+						"lang": "c_cpp"
+        }
+    }
+}
