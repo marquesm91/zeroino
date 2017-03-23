@@ -1,6 +1,33 @@
-# Capítulo 1 - Sistema Binário
+# O Sistema Binário
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc purus, pretium sit amet odio ac, blandit interdum neque. Mauris nec lacinia neque, nec blandit ligula. Aliquam sed vehicula tellus, vel vehicula ante. Vivamus ornare dapibus lorem, quis consectetur enim pulvinar eget. Vivamus tincidunt eu dolor a pretium. Etiam iaculis, eros quis scelerisque vulputate, neque lorem suscipit metus, ac finibus mi mauris eget augue. In tempor fringilla est vitae ultrices. Fusce accumsan vel quam sit amet finibus. Fusce varius viverra faucibus. Nullam nec risus sodales, molestie velit vitae, efficitur lacus.
+O nosso computador é uma máquina poderosa capaz de receber e realizar instruções das mais várias maneiras. A mais intuitiva é utilizar o teclado para exibir caracteres em um editor de texto. Ou clicar em um ícone e abrir algum programa. Ou até mesmo o simples movimento do mouse na tela. Então, o computador precisa de "pensar" para responder as instruções de maneira correta. O mais incrível que ele só faz isso utilizando números. Apenas zeros e uns.
+
+O Sistema Binário nada mais é que um sistema numérico onde só existem dois algarismos para se trabalhar: 0 e 1. O nosso sistema numérico convencional é o sistema decimal - ou de base 10 - onde existem 10 algarismos, ou seja, os números de 0 a 9.
+
+No nosso sistema convencional chama-se cada algarismo por um nome específico, como unidade, dezena, centena e assim por diante. No mundo computacional, a palavra **bit** é o nome dado ao algarismo. Para clarear melhor as coisas, vamos ao primeiro exemplo:
+
+10 = 1010
+
+O número dez na base decimal é o número 1010 (leia-se um, zero, um, zero) na base binária. Por que tão diferentes? O número dez precisa de dois algarismos para ser representado. Se dissecassemos o número ficaria assim:
+
+10 = 1*10^1 + 0*10^0
+
+A fórmula mágica é (valor)*(base)^(algarismo), onde valor é o número que está no algarismo começando 0 e não esquecer de anotar qual a base utilizada. Fazendo a mesma coisa para a base binária:
+
+10 = 1*2^3 + 0*2^2 + 1*2^1 + 0*2^0
+
+Como num passe de mágica, o número 1010 na base 2 foi convertido para a base 10 que estamos acostumados. Legal, porém utilizar a fórmula não é nem um pouco funcional. Existe uma dica que é se acostumar a anotar todas as potências de 2 acima dos bits. Então,
+
+8	4 2 1
+1	0	1	0
+
+Intuitivamente conseguimos ver que 0 representa um bit "desligado" e 1 "ligado. Logo, 8 + 2 = 10. Chegamos ao resultado mais rápido. Outro ponto matemático interessante é entender quantos bits serão necessários para se representar um determinado número.
+
+
+Por que é importante aprender o sistema binário para entender esse livro? Exemplos futuros onde irão envolver sensores e 
+
+
+só consegue "pensar" de uma maneira lógica e direta baseado em apenas dois números: 0 e 1.
 
 Cras blandit massa ut lorem lobortis, vitae congue mi viverra. Duis id facilisis justo. Vestibulum non augue ac sem euismod fringilla. Nunc eu leo eros. Praesent porttitor dapibus turpis vitae luctus. Aenean tincidunt volutpat nulla, non eleifend turpis dictum non. Quisque laoreet erat ligula, vel pharetra nibh aliquet et. Mauris at maximus erat. Pellentesque quis pellentesque erat.
 
