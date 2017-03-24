@@ -1,6 +1,12 @@
 # Summary
 
+
+### Prefácio
+
 * [O que é Zeroino?](README.md)
+
+### Capítulo 1
+
 * [O Sistema Binário](ONE.md)
 	* [Por que aprender binário?](ONE.md#porque)
 	* [Fórmula dos números](ONE.md#formula)

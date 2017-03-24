@@ -6,13 +6,17 @@
     "plugins": [
         "include-codeblock",
         "ace",
-		"gist"
+		"gist",
+        "sitemap"
   	],
     "pluginsConfig": {
         "include-codeblock": {
             "template": "ace",
             "theme": "tomorrow_night_eighties",
 						"lang": "c_cpp"
+        },
+        "sitemap": {
+            "hostname": "https://zeroino.com.br/"
         }
     }
 }
