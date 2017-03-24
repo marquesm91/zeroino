@@ -129,7 +129,7 @@ O operador lógico NOT `~` é a operação mais básica no sistema binário e re
 Se adotarmos que `0` representa falso e `1` verdadeiro, a tabela verdade mostra que o resultado é apenas a contradição do outro, ou seja, se verdadeiro é faso e quando falso é verdadeiro. Com um exemplo mais prático, podemos aplicar a tabela verdade bit a bit e encontrar o resultado da operação.
 
 <div class="code-scope">
-		~&nbsp1 0	1 1<br/>
+		~&nbsp;1 0	1 1<br/>
 		&nbsp;&nbsp;=======<br/>
 		&nbsp;&nbsp;0 1 0 0
 </div>
@@ -173,7 +173,7 @@ Se adotarmos que `0` representa falso e `1` verdadeiro, a tabela verdade mostra 
 
 <div class="code-scope">
 		&nbsp;&nbsp;1 0	1 1<br/>
-		&&nbsp;1 0 1 0<br/>
+		|&nbsp;1 0 1 0<br/>
 		&nbsp;&nbsp;=======<br/>
 		&nbsp;&nbsp;<span class="blue-content">1</span> 0 <span class="blue-content">1</span> <span class="blue-content">1</span>
 </div>
@@ -195,7 +195,7 @@ Se adotarmos que `0` representa falso e `1` verdadeiro, a tabela verdade mostra 
 
 <div class="code-scope">
 		&nbsp;&nbsp;1 0	1 1<br/>
-		&&nbsp;1 0 1 0<br/>
+		^&nbsp;1 0 1 0<br/>
 		&nbsp;&nbsp;=======<br/>
 		&nbsp;&nbsp;0 0 0 <span class="blue-content">1</span>
 </div>
