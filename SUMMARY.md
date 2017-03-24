@@ -1,6 +1,6 @@
 # Summary
 
-* [O que é ZeroIno?](README.md)
+* [O que é Zeroino?](README.md)
 * [O Sistema Binário](ONE.md)
 	* [Por que aprender binário?](ONE.md#porque)
 	* [Fórmula dos números](ONE.md#formula)
@@ -12,4 +12,4 @@
 		* [Operador ^](ONE.md#xor)
 		* [Operador <<](ONE.md#multiplicacao)
 		* [Operador >>](ONE.md#divisao)
-	* [Dicionário do capítulo](ONE.md#dicionario)
+	* [Existem outras bases?](ONE.md#hex)

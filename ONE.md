@@ -2,7 +2,7 @@
 
 O nosso computador é uma máquina poderosa capaz de receber e realizar instruções das mais variadas maneiras. Utilizar o teclado para exibir caracteres em um editor de texto. Clicar em um ícone e abrir algum programa. O simples movimento do mouse reproduzido no ponteiro da tela. Esses são alguns dos exemplos que o computador precisa de "pensar" para responder de maneira correta. O mais incrível é que ele faz isso utilizando apenas números. Apenas zeros e uns.
 
-O Sistema Binário nada mais é que um sistema numérico onde só existem dois algarismos: 0 e 1. O nosso sistema numérico convencional é o sistema decimal - ou de base 10 - onde existem 10 algarismos, os números de 0 a 9. Cada posição de algarismo tem um nome específico, sendo eles a unidade, dezena, centena e assim por diante. No mundo computacional, simplifica-se chamando essas posições de *bit*.
+O Sistema Binário nada mais é que um sistema numérico onde só existem dois algarismos distintos: 0 e 1. O nosso sistema numérico convencional é o sistema decimal - ou de base 10 - onde existem 10 algarismos distintos, os números de 0 a 9. Cada posição de algarismo tem um nome específico, sendo eles a unidade, dezena, centena e assim por diante. No mundo computacional, simplifica-se chamando essas posições de *bit*.
 
 <h3 id="porque">Por que aprender binário?</h3>
 
@@ -264,7 +264,27 @@ Os parênteses que englobam `(base)` e `(quantidade deslocada)` só reforça que
 
 O número atual na base `2` deslocado à direita de `1`, operação marcada em <span class="red-content">vermelho</span>, teve como resultado, em <span class="blue-content">azul</span>, o número `0011` equivalente a `3` na base que estamos acostumados. Isso já era de se esperar já que `6 / ((base) * (quantidade deslocada)) = 6 / ((2) * (1)) = 6 / 2 = 3`. É preciso tomar cuidado com esse operador, pois se o deslocamento for de muitos *bits* aconteceria o fenômeno de *underflow*, *bits* à direita que foram deslocados e se perderam. Os fenômenos de *underflow* e *overflow* são parecidos, mudando apenas a direção em que os *bits* se perdem.
 
-<h3 id="dicionario">Dicionário do capítulo</h3>
+<h3 id="hex">Existem outras bases?</h3>
 
-* `Bit`: algarismo no sistema binário.
-* `Byte`: equivalente a 8 bits.
+Um número pode ser representando em qualquer base que imaginar desde que seja um número natural diferente de zero. Algumas que se destacam são a base 2, base 8, base 10 e base 16. A base hexadecimal - ou 16 - é uma das bases mais usadas em aplicações de alto nível pelo fato de facilitar a representação de números binários.
+
+Como dito anteriormente, a base binária possui apenas dois algarismos distintos 0 e 1. A base decimal possui 10 números de 0 a 9. E a base 16? Além dos números que compõe a base 10, a base hexadecimal acrescentou as letras de A até F. A tabela a seguir mostra essas letras e suas equivalências na base decimal.
+
+| Base hexadecimal | Base decimal |
+|:----------------:|:------------:|
+|         A        |      10      |
+|         B        |      11      |
+|         C        |      12      |
+|         D        |      13      |
+|         E        |      14      |
+|         F        |      15      |
+
+A princípio isso pode parecer bastante confuso, mas com um pouco de prática iremos ver que essa base é bastante útil. A base hexadecimal se relaciona com a base binária através de agrupamento de *bits*. Um único número na base 16 equivale a 4 *bits*. Tem-se
+
+```
+0001111110100111 = 0001 1111 1010 0111 = 1 F A 7 = 1FA7
+```
+
+Partindo de uma sequência de 16 *bits*, dividiu-se em grupos de 4 *bits*. Analisando cada grupo, `0001` representa `1` na base decimal e hexadecimal. O número `1111` equivale a `15` e consultando a tabela, `F` é a letra correspondente. Se continuarmos, `1010` é a letra `A` e por fim, `0111` é o número `7`. Com esse exemplo é possível ver que uma sequência um pouco mais extensa de *bits* pôde ser minimizada com a formação desses grupos e transformando a sequência para a base hexadecimal. Vale lembrar, que todas as operações explicadas anteriormente para a base binária são válidas, também, para a base hexadecimal.
+
+Na prática, muitas dessas sequências são ainda maiores que 16 *bits*, portanto, a transformação de base é crucial para facilitar suas representações e manipulações.

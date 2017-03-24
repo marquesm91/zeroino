@@ -6,7 +6,7 @@
     "plugins": [
         "include-codeblock",
         "ace",
-				"gist"
+		"gist"
   	],
     "pluginsConfig": {
         "include-codeblock": {
