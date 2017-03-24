@@ -2,8 +2,8 @@
 
 * [O que é ZeroIno?](README.md)
 * [O Sistema Binário](ONE.md)
+	* [Por que aprender binário?](ONE.md#porque)
 	* [Fórmula dos números](ONE.md#formula)
-	* [Por que aprender o sistema binário?](ONE.md#porque)
 	* [Operações com os bits](ONE.md#operacoes)
 		* [Operador +](ONE.md#adicao)
 		* [Operador &](ONE.md#and)

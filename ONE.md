@@ -4,19 +4,19 @@ O nosso computador é uma máquina poderosa capaz de receber e realizar instruç
 
 O Sistema Binário nada mais é que um sistema numérico onde só existem dois algarismos: 0 e 1. O nosso sistema numérico convencional é o sistema decimal - ou de base 10 - onde existem 10 algarismos, os números de 0 a 9. Cada posição de algarismo tem um nome específico, sendo eles a unidade, dezena, centena e assim por diante. No mundo computacional, simplifica-se chamando essas posições de *bit*.
 
-Vamos a um exemplo. O número dez na base decimal é o número 1010 (leia-se um, zero, um, zero) na base binária. Foi preciso 4 *bits* para sua representação, enquanto que na base que estamos acostumados apenas dois algarismos são utilizados. Por que tão diferentes?
-
-<h3 id="porque">Por que aprender o sistema binário?</h3>
+<h3 id="porque">Por que aprender binário?</h3>
 
 Exemplos futuros irão envolver configuração de sensores e muitas dessas configurações trata-se de ligar e desligar *bits*. A leitura dos sensores são feitas em nível de bits e conversões são necessárias para facilitar a manipulação matemática, dentre outros desafios que precisa de um conhecimento prévio do sistema numérico que os computadores utilizam. Portanto, é importante começar com o pé direito e entender as pequenas coisas para construir grandes projetos.
 
 <h3 id="formula">Fórmula dos números</h3>
 
+Começando com um exemplo. O número dez na base decimal é o número 1010 (leia-se um, zero, um, zero) na base binária. Foi preciso 4 *bits* para sua representação, enquanto que na base que estamos acostumados apenas dois algarismos são utilizados. Por que tão diferentes?
+
 ```
 10 = 1*10^1 + 0*10^0
 ```
 
-O número `10` pode ser separado da forma acima que matematicamente está tudo ok. A represetação da multiplicação no computador é dada pelo símbolo asterísco `*` enquanto que a representação da pontenciação é dado por `^`. De maneira genérica é possível escrever a mesma fórmula assim
+A equação acima está matematicamente correta e apenas representamos o número de outra forma para chegarmos a uma fórmula genérica. A represetação da multiplicação no computador é dada pelo símbolo asterísco `*` enquanto que a representação da pontenciação é dado por `^`. De maneira genérica
 
 ```
 (número)*(base)^(posição)
@@ -25,7 +25,7 @@ O número `10` pode ser separado da forma acima que matematicamente está tudo o
 onde `número` é um dos algarismos que representa a `base` e `posição` representa onde ele está posicionado começando do zero e contando da direita para a esquerda. Representando o número 10 na base binária
 
 <div class="code-scope">
-	10 = <span class="high-number">1</span>*2^3 + <span class="high-number">0</span>*2^2 + <span class="high-number">1</span>*2^1 + <span class="high-number">0</span>*2^0 = <span class="high-number">1010</span> 
+	10 = <span class="red-content">1</span>*2^3 + <span class="red-content">0</span>*2^2 + <span class="red-content">1</span>*2^1 + <span class="red-content">0</span>*2^0 = <span class="red-content">1010</span> 
 </div>
 
 Como num passe de mágica, o número 10 foi convertido para a base binária resultando em 1010. Legal, porém não é funcional utilizar a fórmula insistentemente. Existe uma dica que é se acostumar a anotar todas as potências de 2 acima dos *bits*. Então,
@@ -34,7 +34,7 @@ Como num passe de mágica, o número 10 foi convertido para a base binária resu
 	<span class="">
 		8	4	2	1
 	</span><br/>
-	<span class="high-number">
+	<span class="red-content">
 		1	0	1	0
 	</span><br/>
 </div>
@@ -45,7 +45,7 @@ Intuitivamente conseguimos ver que 0 representa um *bit* "desligado" e 1 "ligado
 	<span class="">
 		1024&nbsp;512&nbsp;256&nbsp;128&nbsp;64&nbsp;&nbsp;32&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;1
 	</span><br/>
-	<span class="high-number">
+	<span class="red-content">
 		&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;1
 	</span><br/>
 </div>
@@ -95,7 +95,7 @@ A terceira e a quarta soma são idênticas a primeira, logo temos que o número 
 		&nbsp;&nbsp;0 0 0 1
 </div>
 
-Aquele último `1` a esquerda foi perdido, pois não existe bits disponíveis para representá-lo. Esse fenômeno de perda chama-se *overflow*.
+Aquele último `1` a esquerda foi perdido, pois não existe bits disponíveis para representá-lo. Esse fenômeno de perda chama-se *overflow*. O que aconteceu ali? Com 4 bits, o número máximo que conseguimos represetar é o número `15` e o seu equivalente na base binária é `1 1 1 1`. Intuitivamente, o número que não consegue ser representado deve ser superior a `15` e de fato é. `1 0 0 0 1` na base decimal é o `17` e para que ele exista, sua resolução mínima é de 5 bits.
 
 <h4 id="deslocamento">Deslocamento</h4>
 
