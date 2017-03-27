@@ -12,17 +12,17 @@ Exemplos futuros irão envolver configuração de sensores e muitas dessas confi
 
 O número `13` na base decimal é o número `1101` (leia-se um, um, zero, um) na base binária. Foram precisos 4 bits para sua representação, enquanto que, na base em que estamos acostumados, apenas dois algarismos são utilizados. Por que tão diferentes?
 
-```
+<div class="code-scope">
 13 = 1*10^1 + 3*10^0
-```
+</div>
 
 A equação acima está matematicamente correta e apenas representamos o número explicitando a base.
 
 A representação da multiplicação no computador é dada pelo símbolo `*` enquanto que a representação da pontenciação é dado por `^`. De maneira genérica, existe uma forma de converter qualquer número em uma determinada base para a base decimal.
 
-```
+<div class="code-scope">
 (algarismo)*(base)^(posição)
-```
+</div>
 
 onde `algarismo` é um dos algarismos que representa a `base`, isto é, para a base decimal será algum número entre 0 e 9 e para a base binária será 0 ou 1. A `posição` representa onde ele está posicionado começando do zero e contando da direita para a esquerda. O número `0111` é representado por quem na base decimal? Simples, usando a fórmula
 
@@ -219,9 +219,9 @@ O operador de deslocamento de *bits* para a esquerda `<<` representa a multiplic
 
 O deslocamento de *bits* à esquerda multiplica o valor atual na base decimal daquele número pela sua base vezes a quantidade deslocada, ou seja 
 
-```
+<div class="code-scope">
 (valor atual) * (base) * (quantidade deslocada) = (novo valor)
-```
+</div>
 
 Vale lembrar que o símbolo `*` representa a multiplicação no mundo computacional. Logo, se efetuarmos a seguinte operação:
 
@@ -249,9 +249,9 @@ O operador de deslocamento de *bits* para a direita `>>` representa a divisão n
 
 O deslocamento de *bits* à direita divide o valor atual daquele número pela sua base vezes a quantidade deslocada, ou seja 
 
-```
+<div class="code-scope">
 (valor atual) / ((base) * (quantidade deslocada)) = (novo valor)
-```
+</div>
 
 Os parênteses que englobam `(base)` e `(quantidade deslocada)` só reforça que a divisão é feita pelo produto desses dois valores. Enquanto que o símbolo `*` representa a multiplicação na linguagem de programação, o símbolo `/` representa a divisão. A partir daqui, efetuamos a seguinte operação
 
@@ -281,9 +281,9 @@ Como dito anteriormente, a base binária possui apenas dois algarismos distintos
 
 A princípio isso pode parecer bastante confuso, mas com um pouco de prática iremos ver que essa base é bastante útil. A base hexadecimal se relaciona com a base binária através de agrupamento de *bits*. Um único número na base 16 equivale a 4 *bits*. Tem-se
 
-```
+<div class="code-scope">
 0001111110100111 = 0001 1111 1010 0111 = 1 F A 7 = 1FA7
-```
+</div>
 
 Partindo de uma sequência de 16 *bits*, dividiu-se em grupos de 4 *bits*. Analisando cada grupo, `0001` representa `1` na base decimal e hexadecimal. O número `1111` equivale a `15` e consultando a tabela, `F` é a letra correspondente. Se continuarmos, `1010` é a letra `A` e por fim, `0111` é o número `7`. Com esse exemplo é possível ver que uma sequência um pouco mais extensa de *bits* pôde ser minimizada com a formação desses grupos e transformando a sequência para a base hexadecimal. Vale lembrar, que todas as operações explicadas anteriormente para a base binária são válidas, também, para a base hexadecimal.
 

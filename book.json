@@ -1,22 +1,21 @@
 {
     "gitbook": "3.x.x",
     "styles": {
-        "website": "css/website.css"
+			"website": "css/website.css"
     },
     "plugins": [
-        "include-codeblock",
-        "ace",
-		"gist",
-        "sitemap"
+			"sitemap",
+			"-highlight",
+			"prism"
   	],
     "pluginsConfig": {
-        "include-codeblock": {
-            "template": "ace",
-            "theme": "tomorrow_night_eighties",
-						"lang": "c_cpp"
-        },
-        "sitemap": {
-            "hostname": "https://zeroino.com.br/"
-        }
+			"sitemap": {
+				"hostname": "https://zeroino.com.br/"
+			},
+			"prism": {
+				"css": [
+					"prismjs/themes/prism-tomorrow.css"
+				]
+			}
     }
 }
