@@ -1,7 +1,7 @@
 # Compiladores
 
-# Evolução das linguagens
+# EvoluÃ§Ã£o das linguagens
 
-# História do PC
+# HistÃ³ria do PC
 
-# Historia do Arduino
+# HistÃ³ria do Arduino

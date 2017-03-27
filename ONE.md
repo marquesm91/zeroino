@@ -13,10 +13,12 @@ Exemplos futuros irão envolver configuração de sensores e muitas dessas confi
 O número `13` na base decimal é o número `1101` (leia-se um, um, zero, um) na base binária. Foram precisos 4 bits para sua representação, enquanto que, na base em que estamos acostumados, apenas dois algarismos são utilizados. Por que tão diferentes?
 
 <div class="code-scope">
-13 = 1*10^1 + 3*10^0
+13 = 10 + 3
+13 = 1*10 + 3*1
+<span class="red-content">13</span> = <span class="red-content">1</span>*10^1 + <span class="red-content">3</span>*10^0
 </div>
 
-A equação acima está matematicamente correta e apenas representamos o número explicitando a base.
+A equação final acima está matematicamente correta e apenas representamos o número explicitando a base.
 
 A representação da multiplicação no computador é dada pelo símbolo `*` enquanto que a representação da pontenciação é dado por `^`. De maneira genérica, existe uma forma de converter qualquer número em uma determinada base para a base decimal.
 
@@ -34,10 +36,10 @@ Descobrimos que é o número `7`. Utilizando a mesma fórmula é possível verif
 
 <div class="code-scope">
 	<span class="">
-		8	4	2	1
+		8 4 2 1
 	</span><br/>
 	<span class="red-content">
-		0 1	1	1
+		0 1 1 1
 	</span><br/>
 </div>
 

@@ -6,7 +6,8 @@
     "plugins": [
 			"sitemap",
 			"-highlight",
-			"prism"
+			"prism",
+            "codetabs"
   	],
     "pluginsConfig": {
 			"sitemap": {
