@@ -4,9 +4,15 @@ O nosso computador é uma máquina poderosa capaz de receber e realizar instruç
 
 O Sistema Binário nada mais é que um sistema numérico onde só existem dois algarismos distintos: 0 e 1. O nosso sistema numérico convencional é o sistema decimal - ou de base 10 - onde existem 10 algarismos distintos, os números de 0 a 9. Cada posição de algarismo tem um nome específico, sendo eles a unidade, dezena, centena e assim por diante. No mundo computacional, simplifica-se chamando essas posições de *bit*.
 
+<h3 id="porque">Bits e Bytes</h3>
+
+No sistema binário, um bit é o nome dado ao seu algarismo. Veremos adiante que o número `7` tem como representação binária o número `0111`. Isso quer dizer que o primeiro bit - ou bit zero - é `1`, o segundo bit, também, é `1` e assim por diante até o quarto e último bit igual a `0`. A representação convencionalmente é lida da direita para a esquerda e não devemos esquecer isso.
+
+Além dos bits, existe seu irmão mais velho: o *byte*. Um byte é representado por 8 bits e o maior número possível para sua representação é `11111111 = 255` e o menor `00000000 = 0`. Logo, com 256 combinações possíveis podemos representar os números entre 0 e 255. Esse agrupamento de bits formando o byte é muito comum e prático para representar grandes quantidades de bits. Um exemplo típico é o tamanho de arquivos do nosso sistema operacional que vão de bytes até gigabytes. 
+
 <h3 id="porque">Por que aprender binário?</h3>
 
-Exemplos futuros irão envolver configuração de sensores e muitas dessas configurações trata-se de ligar e desligar *bits*. A leitura dos sensores são feitas em nível binário e conversões são necessárias para facilitar a manipulação matemática, dentre outros desafios que precisam de um conhecimento prévio do sistema numérico que os computadores utilizam. Portanto, é importante começar com o pé direito e entender as pequenas coisas para construir grandes projetos.
+Exemplos futuros irão envolver configuração de sensores e muitas dessas configurações trata-se de ligar e desligar *bits*. A leitura dos sensores são feitas em nível binário e conversões são necessárias para facilitar a manipulação matemática. Aprender a quantidade de espaço em bits que uma variável de seu programa consegue armazenar, estouro de memória, alocação dinâmica, dentre outros desafios que precisam de um conhecimento prévio do sistema numérico que os computadores utilizam. Portanto, é importante começar com o pé direito e entender as pequenas coisas para construir grandes projetos.
 
 <h3 id="formula">Fórmula dos números</h3>
 
@@ -95,7 +101,7 @@ Foi marcado em <span class="blue-content">azul</span> e <span class="red-content
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
 </div>
 
-A segunda soma já temos o fenômeno do "vai um" na matemática, logo `1 + 1 = 10`. Um pouco estranho, mas não podemos esquecer que estamos na base binária agora. Traduzindo `10` para a base decimal e lembrando que o bit 1 - ou segundo bit - equivale a `2^1 = 2` temos que o número `10` na base binária é o número `2` na base decimal. Daí temos que,
+A segunda soma já temos o fenômeno do "vai um" na matemática, logo `1 + 1 = 10`. Um pouco estranho, mas não podemos esquecer que estamos na base binária agora. Traduzindo `10` para a base decimal e lembrando que o bit 1 - ou segundo bit - equivale a `1*2^1 = 2` temos que o número `10` na base binária é o número `10 = 1*2^1 + 0*2^0 = 2` na base decimal. Daí temos que,
 
 <div class="code-scope">
 		&nbsp;&nbsp;&nbsp;&nbsp;1<br/>
