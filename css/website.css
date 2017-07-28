@@ -3,7 +3,7 @@ p {
 }
 
 .markdown-section .code-scope {
-	font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	font-family: "Consolas","Liberation Mono","Menlo","Courier","monospace";
 	font-size: .85em;
     overflow: auto;
     word-wrap: normal;

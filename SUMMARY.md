@@ -7,7 +7,8 @@
 
 ### Capítulo 1
 
-* [O Sistema Binário](ONE.md)
+* [O Sistema Binário](ONE.md#one)
+	* [Bits e Bytes](ONE.md#bitsbytes)
 	* [Por que aprender binário?](ONE.md#porque)
 	* [Fórmula dos números](ONE.md#formula)
 	* [Operações com os bits](ONE.md#operacoes)
@@ -20,10 +21,11 @@
 		* [Operador >>](ONE.md#divisao)
 	* [Existem outras bases?](ONE.md#hex)
 
-### Capítulo 2
-
-* [Compiladores](TWO.md)
-
 ### Capítulo 3
 
-* [Linguagem C](THREE.md)
+* [Linguagem C](THREE.md#three)
+	* [Conceitos Básicos](THREE.md#basico)
+		* [Declaração e Definição](THREE.md#definicaodeclarao)
+		* [Variáveis](THREE.md#variaveis)
+		* [Escopo](THREE.md#escopo)
+		* [Funções](THREE.md#funcoes)

@@ -1,10 +1,10 @@
-# O Sistema Binário
+<h1 id="one">O Sistema Binário</h1>
 
 O nosso computador é uma máquina poderosa capaz de receber e realizar instruções das mais variadas maneiras. Utilizar o teclado para exibir caracteres em um editor de texto. Clicar em um ícone e abrir algum programa. O simples movimento do mouse reproduzido no ponteiro da tela. Esses são alguns dos exemplos que o computador precisa de "pensar" para responder de maneira correta. O mais incrível é que ele faz isso utilizando apenas números. Apenas zeros e uns.
 
 O Sistema Binário nada mais é que um sistema numérico onde só existem dois algarismos distintos: 0 e 1. O nosso sistema numérico convencional é o sistema decimal - ou de base 10 - onde existem 10 algarismos distintos, os números de 0 a 9. Cada posição de algarismo tem um nome específico, sendo eles a unidade, dezena, centena e assim por diante. No mundo computacional, simplifica-se chamando essas posições de *bit*.
 
-<h3 id="porque">Bits e Bytes</h3>
+<h3 id="bitsbytes">Bits e Bytes</h3>
 
 No sistema binário, um bit é o nome dado ao seu algarismo. Veremos adiante que o número `7` tem como representação binária o número `0111`. Isso quer dizer que o primeiro bit - ou bit zero - é `1`, o segundo bit, também, é `1` e assim por diante até o quarto e último bit igual a `0`. A representação convencionalmente é lida da direita para a esquerda e não devemos esquecer isso.
 

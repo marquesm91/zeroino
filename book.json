@@ -7,7 +7,7 @@
 			"sitemap",
 			"-highlight",
 			"prism",
-            "codetabs"
+      "codetabs"
   	],
     "pluginsConfig": {
 			"sitemap": {
