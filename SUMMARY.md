@@ -25,7 +25,10 @@
 
 * [Linguagem C](THREE.md#three)
 	* [Conceitos Básicos](THREE.md#basico)
+		* [Instrução](THREE.md#instrucao)
 		* [Declaração e Definição](THREE.md#definicaodeclarao)
 		* [Variáveis](THREE.md#variaveis)
 		* [Escopo](THREE.md#escopo)
+		* [Indentação](THREE.md#indentacao)
 		* [Funções](THREE.md#funcoes)
+	* [Hello World](THREE.md#helloworld)

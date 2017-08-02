@@ -26,6 +26,10 @@ Para entender melhor, e antes de mostrar um programa completo, é bom expor algu
 
 <h4 id="instrucao">Instrução</h4>
 
+Instruções são ações que o processador deve executar para que o programa exista. No trecho de código acima, para calcular a média de um grupo de números, foram necessários pelo menos 4 instruções. Em uma mesma linha podem existir mais de uma instrução, onde o programador possa ser mais flexível e sucinto quando está escrevendo seu programa, mas o computador irá dividir essas linhas até que se tenha uma única instrução explícita por linha e sem ambiguidade.
+
+É necessário entender que quando codificamos estamos em um nível acima do computador, pois escrevemos textos padronizados que irão gerar um código de máquina onde toda sua extensão só existirá zeros e uns. Portanto, estamos em alto nível, enquanto que o máquina e suas operações representadas no sistema binário estão em baixo nível.
+
 <h4 id="definicaodeclarao">Declaração e Definição</h4>
 
 Declaração, na programação, é o termo usado quando pedimos ao computador, por meio de instruções, que guarde a <strong>existência</strong> de alguma coisa em sua memória. Essa coisa pode ser uma variável, um cabeçalho de função, uma estrutura de dados.
@@ -72,13 +76,50 @@ Escopo é um contexto delimitante aos quais valores e expressões estão associa
 <span style="color: #FF3A3A;">}</span>
 </div>
 
-Nessa imagem existem 3 escopos e, analogamente vamos imaginar que são casas. Então existe a casa <span style="color: #FF3A3A;">vermelha</span>, <span style="color: #3C65C4;">azul</span> e a <span style="color: #FFDE00;">amarela</span>. Em cada casa vive uma pessoa, Fulano, Ciclano e Beltrano.
+Nessa imagem existem 3 escopos e, analogamente vamos imaginar que são casas. Então existe a casa <span style="color: #FF3A3A;">vermelha</span>, <span style="color: #3C65C4;">azul</span> e a <span style="color: #FFDE00;">amarela</span>. Em cada casa vive uma pessoa, Fulano, Ciclano e Beltrano. Fulano é uma pessoa curiosa e instalou uma câmera na casa de Ciclano e Beltrano. Ciclano também quis se aponderar disso e colocou uma câmera na casa apenas de Beltrano. Beltrano é uma pessoa boa e não colocou câmera em lugar nenhum. Logo, Fulano sabe o que ele, Ciclano e Beltrano fazem durante o dia, Ciclano tem conhecimento dele e Beltrano, enquanto que Beltrano só presencia seus atos.
+
+Concluimos que os escopos (casas) são usados para definir o grau de ocultação da informação. Logo, os escopos mais externos sabem o que acontece nos escopos internos, porém o inverso já não pode ser dito. É por isso que Beltrano não sabe o que ninguém faz e Fulano consegue observar todos.
 
 <h4 id="indentacao">Indentação</h4>
 
+Indentação nada mais é que o espaçamento dado com relação à margem. Ela ressalta a estrutura do algoritmo e melhora a legibilidade. Da mesma forma que uma redação existe os espaçamentos de parágrafo e saltos de linha quando necessário, na programação é a indentação bem feita que causa o mesmo efeito. Então, se você quiser compartilhar seu código e precisa que seja entendido, é bem provável que necessite de uma indentação. Só para exemplificar, veja um código bem indentado e o mesmo quando a indentação não existe.
+
+``` cpp
+// Algoritmo com Indentação           //Algoritmo sem indentação
+#include <iostream>                   #include <iostream>
+
+int main () {                         int main () {
+  int A = 1;                          int A = 1;
+  int B = 2;                          int B = 2;
+                                      
+  if (A > B) {                        if (A > B) {
+    printf("A maior que B");          printf("A maior que B");
+  } else if (A == B) {                } else if (A == B) {
+    printf("A igual a B");            printf("A igual a B");
+  } else if (A < B) {                 } else if (A < B) {
+    printf("B maior que A");          printf("B maior que A");
+  }                                   }
+                                      
+  return 0;                           return 0;
+}                                     }
+                 
+```
+
 <h4 id="funcoes">Funções</h4>
 
-<h3 id="basico">Meu primeiro programa</h3>
+Funções, ou métodos, são um grupo de instruções para realizar um determinado algoritmo. Podemos criar uma função para multiplicar dois números e imprimir o resultado na tela, ou simplesmente retornar esse resultado para outra parte do programa utilizar.
+
+Basicamente, uma função possui um nome, seus parâmetros e seu tipo de retorno. Analogamente, imagine uma caixa preta. Se eu te disser que se você entregar a essa caixa preta um número, ela vai te retornar o dobro desse número subtraído de 1.
+
+<img src="http://i.imgur.com/oKPCznQ.png" alt="Caixa Preta" class="img-center">
+
+Logo, o parâmetro é um número e esse deve ser um número inteiro e seu tipo de retorno, ou apenas retorno, também é um número inteiro.
+
+Existem funções onde se passe apenas parâmetros, não existindo um tipo de retorno, ou então, mais simples ainda, quando nem parâmetros existem para que as funções sejam executadas.
+
+Mais adiante retomaremos esse assunto, mas entenda que quando estamos falando sobre funções, essa analogia de caixa preta vai esclarecer bastante o fluxo que o código fonte caminha enquanto ele é executado.
+
+<h3 id="helloworld">Meu primeiro programa: Hello World!</h3>
 
 Como toda curva de aprendizado é preciso começar do básico. Vamos analisar, linha por linha, esse pequeno programa.
 
